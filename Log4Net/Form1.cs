@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Windows.Forms;
 using log4net;
 
@@ -16,6 +17,12 @@ namespace Log4Net
         private void btnClick_Click(object sender, EventArgs e)
         {
             logger.Info("Botón pulsado");
+        }
+
+        private void txtSettings_Click(object sender, EventArgs e)
+        {
+            var sAttr = ConfigurationManager.AppSettings["FileName"].ToString();
+            MessageBox.Show(sAttr);
         }
     }
 }
