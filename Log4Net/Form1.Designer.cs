@@ -50,6 +50,7 @@
             this.txtSettings.TabIndex = 1;
             this.txtSettings.Text = "Settings";
             this.txtSettings.UseVisualStyleBackColor = true;
+            this.txtSettings.Click += new System.EventHandler(this.txtSettings_Click);
             // 
             // Form1
             // 
